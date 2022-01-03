@@ -6,7 +6,11 @@ public class DefaultCountingOutRhymer {
 	public static final int errorRetVal = -1;
 	private final int[] numbers = newNumArr;
 
-	public int total = -1;
+	private int total = -1;
+
+	public int getTotal() {
+		return total;
+	}
 
 	public void countIn(final int in) {
 		if (!isFull())
