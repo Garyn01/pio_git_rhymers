@@ -2,8 +2,8 @@ package edu.kis.vh.nursery;
 
 public class DefaultCountingOutRhymer {
 
-	public static final int[] newNumArr = new int[12];
-	public static final int errorRetVal = -1;
+	private static final int[] newNumArr = new int[12];
+	private static final int errorRetVal = -1;
 	private final int[] numbers = newNumArr;
 
 	private int total = -1;
@@ -18,7 +18,7 @@ public class DefaultCountingOutRhymer {
 	}
 
 	public boolean callCheck() {
-		return total == -1;
+		return total == errorRetVal;
 	}
 
 	public boolean isFull() {
@@ -33,7 +33,7 @@ public class DefaultCountingOutRhymer {
 
 	public int countOut() {
 		if (callCheck())
-			return -1;
+			return errorRetVal;
 		return numbers[total--];
 	}
 
