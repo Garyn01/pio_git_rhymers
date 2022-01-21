@@ -1,5 +1,14 @@
 package edu.kis.vh.nursery.list;
 
+/**
+ * Node used for a Linked List of ints
+ * contains one int and pointers to two other Nodes
+ * possible methods:
+ * get/setValue - getter/setter for Value
+ * get/setPrev - getter/setter for previous Node
+ * get/setNext - getter/setter for next Node
+ *
+ */
 public class Node {
 
 	private int value;
